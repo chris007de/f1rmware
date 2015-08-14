@@ -30,6 +30,7 @@ struct CDESC the_config[]= {
     {"nickfg",           0,     0, 255, 1, CFG_TYPE_DEVEL},
     {"nickbg",           255,   0, 255, 1, CFG_TYPE_DEVEL},
     {"vdd_fix",          0,     0, 1,   0, 0},
+    {"ws2812_active",    1,     0, 1,   0, 0},
     { NULL,              0,     0, 0  , 0, 0},
 };
 
