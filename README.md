@@ -1,3 +1,9 @@
+# Custom choice of Pull Requests
+* https://github.com/rad1o/f1rmware/pull/28
+* https://github.com/rad1o/f1rmware/pull/30
+* https://github.com/rad1o/f1rmware/pull/33
+* https://github.com/rad1o/f1rmware/pull/34
+
 ![Build Status](https://travis-ci.org/rad1o/f1rmware.svg)
 
 Build Log: https://travis-ci.org/rad1o/f1rmware
