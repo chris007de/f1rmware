@@ -140,7 +140,6 @@ int main(void) {
 
 	inputInit();
 	fsInit(); 
-	lcdFill(0xff);
 	readConfig();
 	switch(getInputRaw()){
 		case BTN_RIGHT:
@@ -149,6 +148,7 @@ int main(void) {
 			break;
 	};
 	lcdInit();
+	lcdFill(0xff);
 	batteryInit();
 
 	generated_init();
