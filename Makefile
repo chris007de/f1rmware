@@ -12,6 +12,7 @@ subdirs:
 	$(MAKE) -C rfapp
 	$(MAKE) -C rflib	
 	$(MAKE) -C l0unge
+	$(MAKE) -C acab_remote
 	$(MAKE) -C hackrfapp
 	$(MAKE) -C bootloader
 	$(MAKE) -C flashapp
@@ -44,6 +45,7 @@ clean:
 	$(MAKE) -C rfapp clean
 	$(MAKE) -C rflib clean	
 	$(MAKE) -C l0unge clean
+	$(MAKE) -C acab_remote clean
 	$(MAKE) -C bootloader clean
 	$(MAKE) -C flashapp clean
 	$(MAKE) -C l0dables clean
