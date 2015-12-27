@@ -40,8 +40,8 @@
 
 #include <string.h>
 
-// default to 2395 MHz
-#define FREQSTART 2395000000
+// default to 2396 MHz
+#define FREQSTART 2396000000
 
 const uint8_t NUM_LEDS = 8;
 uint8_t led_divider = 0x2;
