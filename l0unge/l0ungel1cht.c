@@ -295,32 +295,6 @@ void l0ungel1cht() {
         }
         //END MENU
 
-
-       uint8_t test[5];
-       static uint8_t state = 0;
-
-       test[0]=0x11;
-       test[1]=0x3;
-       if (0 == state)
-       {
-       test[2]=0x80;
-       test[3]=0x00;
-       test[4]=0xFF;
-       state = 1;
-        } else if (1 == state) {
-       test[2]=0x80;
-       test[3]=0xFF;
-       test[4]=0x00;
-       state = 2;
-        } else if (2 == state ){
-        test[2]=0xFF;
-       test[3]=0x00;
-       test[4]=0x80;
-            state = 0;
-        }
-       transmit(test, 5);
-        delayms(500);
-/*
         // Poll for BFSK packets
         uint8_t rx_pkg[256];
         int rx_pkg_len = rflib_bfsk_get_packet(rx_pkg, 255);
@@ -341,7 +315,7 @@ void l0ungel1cht() {
         if(uart_rx_data_ready(UART0_NUM) == UART_RX_DATA_READY) {
             uint8_t data = uart_read(UART0_NUM);
             serial_handler(data);
-        }*/
+        }
     }
 
     rflib_shutdown();
